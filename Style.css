@@ -394,6 +394,32 @@ nav a {
     font-size: clamp(35px, 4.4vw, 62px)
 }
 
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.project-card {
+    padding: 28px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+}
+
+.project-card h2 {
+    margin-bottom: 12px;
+}
+
+.project-card p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+project-card .text-link {
+    display: inline-block;
+    margin-right: 20px;
+}
+
 .contact-section {
     padding: 110px clamp(24px, 10vw, 155px) 30px;
     background: var(--blue);
@@ -557,5 +583,11 @@ nav a {
 
     .hero h1 {
         font-size: 43px
+    }
+}
+
+@media(max-width:700px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
     }
 }
